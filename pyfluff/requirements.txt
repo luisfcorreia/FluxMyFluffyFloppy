@@ -1,0 +1,15 @@
+# PyFluff runtime requirements.
+#
+# The application itself is STANDARD LIBRARY ONLY (tkinter, configparser,
+# subprocess, ...). tkinter ships with the official Python installers on
+# Windows and macOS; on Linux install it from your distro, e.g.:
+#   Debian/Ubuntu : sudo apt install python3-tk
+#   Fedora        : sudo dnf install python3-tkinter
+#   Alpine        : apk add python3-tkinter
+#
+# Nothing to install via pip for normal use:
+#   pip install -r requirements.txt   # no-op, completes immediately
+#
+# Optional, only for nicer COM-port detection (built-in fallback is used
+# automatically when pyserial is absent):
+# pyserial>=3.5
